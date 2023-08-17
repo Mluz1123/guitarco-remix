@@ -4,7 +4,6 @@ import {
   Outlet,
   Scripts,
   LiveReload,
-  useCatch,
   Link,
   useRouteError,
   isRouteErrorResponse
@@ -67,8 +66,6 @@ function Document({ children }) {
 /** MANEJO DE ERRORES **/
 export function ErrorBoundary() {
   const error = useRouteError()
-
-  console.log(error)
 
   if (isRouteErrorResponse(error)) {
     return (

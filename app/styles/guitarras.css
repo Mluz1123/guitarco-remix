@@ -42,22 +42,3 @@
   margin: 0;
   font-weight: 900;
 }
-.guitarra .enlace {
-  margin-top: 2rem;
-  display: block;
-  background-color: var(--black);
-  color: var(--white);
-  text-decoration: none;
-  padding: 0.5rem;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  font-weight: 900;
-  border-radius: 0.5rem;
-  transition-property: background-color;
-  transition-duration: 300ms;
-}
-
-.guitarra .enlace:hover {
-  background-color: var(--primary);
-}
