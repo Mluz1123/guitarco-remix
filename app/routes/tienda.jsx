@@ -1,4 +1,4 @@
-import { useLoaderData } from '@remix-run/react'
+import { useLoaderData, useOutletContext } from '@remix-run/react'
 import { getGuitarras } from '~/models/guitarras.server'
 import ListadoGuitarras from '~/components/listado-guitarras'
 import styles from '~/styles/guitarras.css'
@@ -23,7 +23,7 @@ function Tienda() {
   const guitarras = useLoaderData()
   return (
     <main className='contenedor'>
-      <ListadoGuitarras guitarras={guitarras} />
+      <ListadoGuitarras context={useOutletContext} guitarras={guitarras} />
     </main>
   )
 }
